@@ -1,6 +1,6 @@
 <?php
-$a = $_GET['a'];
-$b = $_GET['b'];
+$a = $_GET['1'];
+$b = $_GET['2'];
 
 // Перевірка, чи введені числа є цілими
 if (!is_numeric($a) || !is_numeric($b) || !is_int($a + 0) || !is_int($b + 0)) {
