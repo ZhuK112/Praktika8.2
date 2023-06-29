@@ -1,20 +1,17 @@
-<?php
-$a = $_GET[''];
-$b = $_GET[''];
-
-// Перевірка, чи введені числа є цілими
-if (!is_numeric($a) || !is_numeric($b) || !is_int($a + 0) || !is_int($b + 0)) {
-    echo "Введені значення повинні бути цілими числами.";
-    exit;
-}
-
-$sum = $a + $b;
-$product = $a * $b;
-$difference = $a - $b;
-$quotient = $a / $b;
-
-echo "Сума: " . $sum . "<br>";
-echo "Добуток: " . $product . "<br>";
-echo "Різниця: " . $difference . "<br>";
-echo "Частка: " . $quotient . "<br>";
-?>
+<html>
+<head>
+<title>Завдання 2</title>
+</head>
+<body>
+<h1>Завдання 2 - Математичні операції</h1>
+<form action="result.php" method="get">
+  <label for="a">Змінна A:</label>
+  <input type="number" name="a" id="a"><br>
+  
+  <label for="b">Змінна B:</label>
+  <input type="number" name="b" id="b"><br>
+  
+  <input type="submit" value="Відправити">
+</form>
+</body>
+</html>
